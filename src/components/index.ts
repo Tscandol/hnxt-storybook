@@ -1,1 +1,2 @@
-export * from "./Alert/Alert";
+export * from "./Alert/index";
+export * from "./Test";
