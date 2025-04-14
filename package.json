@@ -2,6 +2,7 @@
   "name": "hnxt-storybook",
   "version": "0.1.0",
   "private": true,
+  "main": "src/components/index.ts", 
   "types": "src/components/index.ts",
   "files": [
     "src/components"
