@@ -2,10 +2,11 @@
   "name": "hnxt-storybook",
   "version": "0.1.0",
   "private": true,
-  "main": "src/components/index.ts",
-  "types": "src/components/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
-    "src/components"
+    "dist"  
   ],
   "scripts": {
     "dev": "next dev --turbopack",
@@ -13,7 +14,9 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-lib": "tsup",
+    "dev-lib": "tsup --watch"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -51,6 +54,7 @@
     "playwright": "^1.51.1",
     "storybook": "^8.6.12",
     "tailwindcss": "^4",
+    "tsup": "^8.4.0",
     "typescript": "^5",
     "vitest": "^3.1.1"
   },
